@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <button id="start">Start Watch Party</button>
+    <script>
+        document.getElementById("start").onclick = () => {
+            chrome.tabs.create({
+                url: "http://localhost:3000"
+            });
+        };
+    </script>
+</body>
+
+</html>
