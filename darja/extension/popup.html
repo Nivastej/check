@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <body>
-    <button id="start">Start Watch Party</button>
-    <script>
-        document.getElementById("start").onclick = () => {
-            chrome.tabs.create({
-                url: "http://localhost:3000"
-            });
-        };
-    </script>
-</body>
+  <button id="start">Start Watch Party</button>
 
+  <script>
+    document.getElementById("start").onclick = () => {
+      chrome.tabs.create({
+        url: "https://YOUR-APP.onrender.com"
+      });
+    };
+  </script>
+</body>
 </html>
