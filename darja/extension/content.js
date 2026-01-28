@@ -1,3 +1,5 @@
+importScripts("https://cdn.socket.io/4.7.5/socket.io.min.js");
+
 const socket = io("https://YOUR-APP.onrender.com");
 
 const video = document.querySelector("video");
@@ -19,3 +21,4 @@ socket.on("sync-play", time => {
 socket.on("sync-pause", () => {
   video.pause();
 });
+
