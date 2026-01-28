@@ -1,13 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "Watch Party",
-    "version": "1.0",
-    "permissions": ["activeTab"],
-    "content_scripts": [{
-        "matches": ["https://www.youtube.com/*"],
-        "js": ["content.js"]
-    }],
-    "action": {
-        "default_popup": "popup.html"
+  "manifest_version": 3,
+  "name": "Watch Party",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://YOUR-APP.onrender.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"]
     }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
